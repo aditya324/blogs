@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Impact of Newspaper Ads in a Digital World</title>
+    <!-- Import Quicksand font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Apply Quicksand font to the body -->
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+      .textarea::placeholder {
+        color: red;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8">
+      <nav class="">
+        <div class="flex items-center justify-between">
+          <!-- Left Section: Logo (visible on all screens) -->
+          <div class="flex items-center">
+            <img
+              src="../contact-us-img/sunrise-logo1-5.png"
+              alt="Logo"
+              class="navbar-logo object-contain h-20 md:h-32"
+            />
+          </div>
+
+          <!-- Right Section: Hamburger Menu (visible on small screens) and Get in Touch Button (visible on large screens) -->
+          <div class="flex items-center space-x-6">
+            <!-- Desktop Get in Touch Button: hidden on mobile -->
+            <button
+              class="hidden lg:inline bg-[#FFA314] text-[#44433F] px-6 py-3 rounded-full text-lg md:text-2xl font-bold leading-[30px]"
+            >
+              Get in Touch
+            </button>
+            <!-- Hamburger Menu: visible on all screens -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 text-2xl focus:outline-none"
+            >
+              <img
+                src="../our-stories-img/frame-1000001855.svg"
+                alt="Menu"
+                class="h-10 w-10 md:h-14 md:w-16"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Center Section: Desktop Social Icons (hidden on mobile) -->
+        <div class="hidden lg:flex items-center justify-center mt-4 space-x-4">
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/subtract.svg"
+              alt="Facebook"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/fi-3670274.svg"
+              alt="Instagram"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/group.png"
+              alt="Twitter"
+              class="icon-size"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden mt-4 bg-white shadow-lg p-4">
+          <a href="#" class="block text-gray-700 py-2">Home</a>
+          <a href="#" class="block text-gray-700 py-2">About</a>
+          <a href="#" class="block text-gray-700 py-2">Services</a>
+          <a href="#" class="block text-gray-700 py-2">Contact</a>
+        </div>
+      </nav>
+
+      <div>
+        <div>
+          <h1
+            class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] text-[#44433F] leading-normal"
+          >
+            The Impact of Newspaper Ads in a Digital World
+          </h1>
+        </div>
+
+        <div>
+          <img
+            src="/images/people-cinema-watching-movie.jpg"
+            class="rounded-[55px] mt-10 w-full"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            Introduction
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal pt-10"
+          >
+            With the rapid rise of digital media, many question whether
+            traditional print advertising, particularly newspaper ads, still
+            holds value. Yet, despite the digital shift, newspaper ads remain a
+            powerful medium for reaching specific demographics and adding
+            credibility to brand messaging. Here’s a look at how newspaper
+            advertising fits into today’s digital marketing strategies.
+          </p>
+        </div>
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            1. Why Newspaper Ads Still Matter
+          </h2>
+
+          <ul
+            class="list-disc pl-5 text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            <li>
+              <span class="font-bold">Targeted Reach</span>Newspapers often
+              cater to specific demographics, such as local communities,
+              business professionals, or seniors, making them ideal for brands
+              targeting these audiences.
+            </li>
+            <li>
+              <span class="font-bold">Credibility and Trust:</span>Print media
+              is still viewed as a more credible source compared to some digital
+              platforms, giving newspaper ads an edge in establishing brand
+              trust.
+            </li>
+            <li>
+              <span class="font-bold">Tangibility:</span>The physical aspect of
+              newspapers allows for a lasting presence in households or
+              businesses, unlike fleeting digital ads.
+            </li>
+          </ul>
+
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            2. Benefits of Newspaper Advertising in a Digital Age
+          </h2>
+
+          <ul
+            class="list-disc pl-5 text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            <li>
+              <span class="font-bold">Local Engagement:</span>For regional
+              businesses, newspaper ads can reach a dedicated local audience
+              effectively, enhancing community presence and brand recall.
+            </li>
+            <li>
+              <span class="font-bold">Less Competition for Attention:</span>With
+              fewer ads per page compared to digital feeds, newspaper ads face
+              less competition, often making them more visible and memorable.
+            </li>
+            <li>
+              <span class="font-bold">Enhanced Ad Formats:</span>Newspapers
+              offer various ad types, including full-page spreads, inserts, and
+              classifieds, allowing brands to tailor their approach to fit
+              different budget levels and audience needs.
+            </li>
+          </ul>
+
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            3. Integrating Newspaper Ads into Modern Marketing Strategies
+          </h2>
+
+          <ul
+            class="list-disc pl-5 text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            <li>
+              <span class="font-bold">Complementing Digital Campaigns:</span
+              >Print ads can direct readers to online platforms via QR codes or
+              unique URLs, creating a seamless offline-to-online journey.
+            </li>
+            <li>
+              <span class="font-bold"
+                >Building Cross-Channel Brand Consistency:</span
+              >Including newspaper ads in a larger marketing strategy reinforces
+              brand consistency across multiple media channels, enhancing
+              audience familiarity.
+            </li>
+            <li>
+              <span class="font-bold"
+                >Promoting Events and Limited-Time Offers:</span
+              >Print ads are especially effective for time-sensitive promotions,
+              where readers are likely to note dates and details.
+            </li>
+          </ul>
+
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            4. Designing Effective Newspaper Ads
+          </h2>
+
+          <ul
+            class="list-disc pl-5 text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            <li>
+              <span class="font-bold">Clear, Compelling Headlines:</span>Use
+              simple, impactful language that draws attention immediately,
+              highlighting the ad’s main message.
+            </li>
+            <li>
+              <span class="font-bold">Strong Visuals:</span>Although newspapers
+              are often black and white, incorporating high- quality images or
+              well-placed graphics can make the ad more engaging.
+            </li>
+            <li>
+              <span class="font-bold">Focused Calls to Action:</span>Whether
+              it’s “Visit Our Store” or “Call Today,” the CTA should be
+              prominent and clear, guiding readers on the next step.
+            </li>
+          </ul>
+
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            5. Measuring the Success of Newspaper Ads
+          </h2>
+
+          <ul
+            class="list-disc pl-5 text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            <li>
+              <span class="font-bold">Coupon Codes and QR Codes:</span>Including
+              unique codes helps track direct responses to newspaper ads, making
+              it easier to assess ROI.
+            </li>
+            <li>
+              <span class="font-bold">Customer Surveys:</span>Simple surveys at
+              points of sale or online can help gauge ad effectiveness by
+              identifying how customers learned about your brand or offer.
+            </li>
+            <li>
+              <span class="font-bold">Website Traffic Spikes:</span>Track
+              website traffic and engagement following newspaper ad releases,
+              especially if the ad directs readers to a dedicated landing page.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal mt-3"
+          >
+            Conclusion
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            In a digital-first world, newspaper ads continue to offer a unique,
+            impactful way for brands to connect with specific audiences and
+            build credibility. By incorporating newspaper ads strategically into
+            broader marketing efforts, businesses can create a well-rounded
+            presence across both traditional and digital channels, maximizing
+            reach and brand impact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
