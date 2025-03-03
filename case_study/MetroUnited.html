@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truscan Diagnostics - Case Study</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+      .navbar-logo {
+        height: 125px;
+        width: auto;
+      }
+      .icon-size {
+        height: 40px;
+        width: auto;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      /* Ensure logo resizes properly */
+      .navbar-logo {
+        height: 125px; /* Adjust based on design */
+        width: auto;
+      }
+      .icon-size {
+        height: 40px; /* Adjust size */
+        width: auto;
+      }
+      .textarea::placeholder {
+        color: red;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="w-full xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8 text-[#44433F]"
+    >
+      <nav class="py-4">
+        <div class="flex items-center justify-between">
+          <!-- Left Section -->
+          <div class="flex items-center space-x-4">
+            <!-- Mobile Logo: visible only on small screens -->
+            <div class="block lg:hidden">
+              <img
+                src="../contact-us-img/sunrise-logo1-5.png"
+                alt="Logo"
+                class="navbar-logo object-contain"
+              />
+            </div>
+            <!-- Desktop Social Icons: visible only on large screens -->
+            <div class="hidden lg:flex space-x-4">
+              <a href="#" class="text-gray-600 hover:opacity-75">
+                <img
+                  src="../our-stories-img/subtract.svg"
+                  alt="Facebook"
+                  class="icon-size"
+                />
+              </a>
+              <a href="#" class="text-gray-600 hover:opacity-75">
+                <img
+                  src="../our-stories-img/fi-3670274.svg"
+                  alt="Instagram"
+                  class="icon-size"
+                />
+              </a>
+              <a href="#" class="text-gray-600 hover:opacity-75">
+                <img
+                  src="../our-stories-img/group.png"
+                  alt="Twitter"
+                  class="icon-size h-20 w-20"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Center Section: Desktop Logo (only on larger screens) -->
+          <div class="hidden lg:block">
+            <img
+              src="../contact-us-img/sunrise-logo1-5.png"
+              alt="Logo"
+              class="navbar-logo object-contain"
+            />
+          </div>
+
+          <!-- Right Section -->
+          <div class="flex items-center space-x-6">
+            <!-- Desktop Get in Touch Button: hidden on mobile -->
+            <button
+              class="hidden lg:inline bg-[#FFA314] text-[#44433F] px-6 py-3 rounded-full text-2xl font-bold leading-[30px]"
+            >
+              Get in Touch
+            </button>
+            <!-- Hamburger Menu: visible on all screens -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 text-2xl focus:outline-none"
+              onclick="toggleMenu()"
+            >
+              <img
+                src="../our-stories-img/frame-1000001855.svg"
+                alt="Menu"
+                class="h-14 w-16"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div class="relative">
+          <div
+            id="mobile-menu"
+            class="hidden mt-4 bg-white shadow-lg p-4 rounded-lg"
+          >
+            <a
+              href="/"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <a
+              href="/our-stories.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-info-circle mr-2"></i> About
+            </a>
+            <a
+              href="/service.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-cogs mr-2"></i> Services
+            </a>
+            <a
+              href="/case-studies.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-book-open mr-2"></i> Case Study
+            </a>
+            <a
+              href="/blog.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-blog mr-2"></i> Blogs
+            </a>
+            <a
+              href="/career.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-briefcase mr-2"></i> Careers
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text-4xl font-bold text-center mb-6">
+        Case Study Report: Metro United Healthcare Digital Marketing Campaign
+      </h1>
+
+      <section>
+        <h2 class="text-3xl font-semibold mb-4">1. Objective</h2>
+
+        <p class="text-lg leading-relaxed">
+          Since 2018, Sunrise Digital Media has been managing and promoting
+          Metro United Healthcare’s digital presence on Facebook, Instagram,
+          YouTube, and Google My Business (GMB). The goal of the campaign was to
+          build brand awareness, promote specialized healthcare services, and
+          engage with patients through targeted campaigns. By leveraging diverse
+          digital platforms, Sunrise helped Metro United expand its reach, build
+          trust within the community, and generate leads.
+        </p>
+      </section>
+
+      <section>
+        <h1 class="text-3xl font-semibold mb-4">Platforms Managed</h1>
+        <p class="text-lg leading-relaxed">
+          Sunrise Digital Media strategically managed Metro United’s digital
+          marketing across:
+        </p>
+        <ul class="list-disc pl-6 text-lg">
+          <ul class="list-disc pl-10 text-lg">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+            <li>Google My Business (GMB)</li>
+          </ul>
+        </ul>
+        <p class="text-lg leading-relaxed">
+          Each platform played a distinct role in building Metro United’s online
+          identity, catering to different segments of the audience while
+          offering tailored content.
+        </p>
+        <h2 class="text-3xl font-semibold mb-4">
+          Performance Metrics: Platform-Wise Breakdown
+        </h2>
+
+        <span class="font-bold"> Facebook Performance </span>
+        <ul class="list-disc pl-6 text-lg">
+          <ul class="list-disc pl-10 text-lg">
+            <li>Reach: 199.1K+</li>
+            <li>Profile Visits: 5.5K+</li>
+            <li>Followers: 392+</li>
+            <li>
+              Overall Engagement: The campaign consistently attracted a growing
+              audience with health tips, awareness campaigns, and live doctor
+              sessions. Despite steady follower growth, Facebook served as a key
+              channel for building brand awareness through educational content.
+            </li>
+          </ul>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-3xl font-semibold mb-4">Instagram Performance</h2>
+
+        <ul class="list-disc pl-6 text-lg">
+          <ul class="list-disc pl-10 text-lg">
+            <li>Reach: 231.9K+</li>
+            <li>Profile Visits: 7K+</li>
+            <li>Followers: 835+</li>
+            <li>Engagement: 2.4K+</li>
+            <li>Interactions: 8.6K+</li>
+            <li>Account Views: 484.2K+</li>
+            <li>Profile Activity: 8K+</li>
+            <li>
+              Instagram became the most active platform, particularly for
+              sharing health tips, patient success stories, and promoting
+              events. High engagement rates showcased the platform’s role in
+              creating meaningful patient interactions.
+            </li>
+          </ul>
+        </ul>
+
+        <h2 class="text-3xl font-semibold mb-4">YouTube Performance</h2>
+
+        <ul class="list-disc pl-6 text-lg">
+          <ul class="list-disc pl-10 text-lg">
+            <li>Views: 162.2K+</li>
+            <li>Watch Time (Hours): 7.1K+</li>
+            <li>Subscribers: 1.5K+</li>
+            <li>Impressions: 3.8M+</li>
+            <li>Interactions: 8.6K+</li>
+            <li>Views from Impressions: 130.3K+</li>
+            <li>Watch Time from Impressions (Hours): 6.0K+</li>
+            <li>
+              YouTube was essential for delivering in-depth health content such
+              as doctor interviews, patient testimonials, and live streaming
+              sessions. The platform’s long- form content helped solidify Metro
+              United’s authority in healthcare education.
+            </li>
+          </ul>
+        </ul>
+
+        <h2 class="text-3xl font-semibold mb-4">YouTube Performance</h2>
+
+        <ul class="list-disc pl-6 text-lg">
+          <ul class="list-disc pl-10 text-lg">
+            <li>Views: 162.2K+</li>
+            <li>Watch Time (Hours): 7.1K+</li>
+            <li>Subscribers: 1.5K+</li>
+            <li>Impressions: 3.8M+</li>
+            <li>Interactions: 8.6K+</li>
+            <li>Views from Impressions: 130.3K+</li>
+            <li>Watch Time from Impressions (Hours): 6.0K+</li>
+            <li>
+              YouTube was essential for delivering in-depth health content such
+              as doctor interviews, patient testimonials, and live streaming
+              sessions. The platform’s long- form content helped solidify Metro
+              United’s authority in healthcare education.
+            </li>
+          </ul>
+        </ul>
+
+        <h2 class="text-3xl font-semibold mb-4">
+          Google My Business (GMB) Performance
+        </h2>
+
+        <ul class="list-disc pl-6 text-lg">
+          <ul class="list-disc pl-10 text-lg">
+            <li>Profile Interactions: 41.7K+</li>
+            <li>Calls Made from Profile: 19K+</li>
+            <li>Direction Requests: 17K+</li>
+            <li>Website Clicks: 2.1K+</li>
+            <li>Profile Views: 234.2K+</li>
+            <li>Search Results Displaying Profile: 80.1K+</li>
+            <li>
+              GMB emerged as a vital tool for patient engagement, especially for
+              local communities looking for appointment booking, directions, and
+              hospital information. The high number of calls and direction
+              requests reflected the platform’s role in converting online
+              visibility into real-world interactions.
+            </li>
+          </ul>
+        </ul>
+
+
+
+
+        <div class="">
+            <h2 class="text-3xl font-semibold mb-4">Total Campaign Performance (All Platforms)</h2>
+            
+            <ul class="list-disc pl-6 text-lg">
+              <li><span class="font-semibold">Total Overall Reach:</span> 18,258,889+</li>
+              <li><span class="font-semibold">Total Overall Impressions:</span> 43,489,785+</li>
+            </ul>
+          
+            <p class="mt-4 text-gray-700">
+              These numbers underline the extensive exposure Metro United Healthcare gained across platforms, 
+              effectively establishing it as a trusted healthcare provider in the region.
+            </p>
+          
+            <h2 class="text-2xl font-semibold mt-6">Leads Generated</h2>
+            <p class="mt-2 text-gray-700">
+              <span class="font-semibold">Organic and Paid Leads:</span> Over 1K leads were generated through social media platforms and 
+              website channels, showcasing effective engagement via both organic content and paid advertising.
+            </p>
+          
+            <h2 class="text-2xl font-semibold mt-6">Key Campaigns & Initiatives</h2>
+          
+            <div class="mt-4 space-y-6">
+              <div>
+                <h3 class="text-xl font-semibold">2018: Initial Launch & Awareness Building</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                  <li><span class="font-semibold">Department Introductions & Doctor Profiles:</span> Focused on key doctors and departments, building credibility.</li>
+                  <li><span class="font-semibold">Facebook Live Sessions with Doctors:</span> Interactive Q&A sessions to engage and educate the community.</li>
+                </ul>
+              </div>
+          
+              <div>
+                <h3 class="text-xl font-semibold">2019: Expanding Services & Community Health Engagement</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                  <li><span class="font-semibold">Collaboration with Manipal Hospital Services:</span> Promoted key specialties like diabetic care and heart disease management.</li>
+                  <li><span class="font-semibold">Orthopaedic Health Tips & Blood Donation Camps:</span> Strengthened Metro United’s socially responsible image.</li>
+                </ul>
+              </div>
+          
+              <div>
+                <h3 class="text-xl font-semibold">2020: Special Health Days & COVID-19 Initiatives</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                  <li><span class="font-semibold">COVID-19 Awareness & Vaccination Drive:</span> Educated patients on health safety measures.</li>
+                  <li><span class="font-semibold">Women’s Health Awareness & Free Consultations:</span> Focused on gynecological and maternal health.</li>
+                </ul>
+              </div>
+          
+              <div>
+                <h3 class="text-xl font-semibold">2021: Health Awareness & Specialist Campaigns</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                  <li><span class="font-semibold">Diabetes Awareness Sessions & Obstetrics Launch:</span> Strengthened women's health services.</li>
+                </ul>
+              </div>
+          
+              <div>
+                <h3 class="text-xl font-semibold">2022: Expanding Service Promotions & Patient Success Stories</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                  <li><span class="font-semibold">Knee Replacement Campaign:</span> Showcased successful surgeries and patient testimonials.</li>
+                  <li><span class="font-semibold">Holistic Health Workshop:</span> Partnered with Manipal Hospital for a comprehensive health approach.</li>
+                </ul>
+              </div>
+          
+              <div>
+                <h3 class="text-xl font-semibold">2023-2024: Strengthening Brand Authority</h3>
+                <ul class="list-disc pl-6 text-gray-700">
+                  <li><span class="font-semibold">Women’s Health & Specialist Consultations:</span> Continued free consultations to reinforce multi-specialty care.</li>
+                </ul>
+              </div>
+            </div>
+          
+            <h2 class="text-2xl font-semibold mt-6">Notable Awareness Campaigns</h2>
+            <ul class="list-disc pl-6 text-gray-700">
+              <li><span class="font-semibold">COVID-19 Safety & Vaccination Drive:</span> Provided reliable pandemic-related information.</li>
+              <li><span class="font-semibold">Special Campaigns for Health Days:</span> Engaged audiences on World Stroke Day, World Heart Day, and International Yoga Day.</li>
+            </ul>
+          
+            <h2 class="text-2xl font-semibold mt-6">Engagement & Interaction Highlights</h2>
+            <ul class="list-disc pl-6 text-gray-700">
+              <li><span class="font-semibold">Instagram Success:</span> Over 484.2K+ account views, engaging younger demographics.</li>
+              <li><span class="font-semibold">YouTube Growth:</span> 162.2K+ views on informative health videos.</li>
+              <li><span class="font-semibold">GMB Business Profile:</span> 234.2K+ views and 19K+ calls, connecting local patients with hospital services.</li>
+            </ul>
+          
+            <h2 class="text-2xl font-semibold mt-6">Conclusion</h2>
+            <p class="mt-2 text-gray-700">
+              Sunrise Digital Media’s strategic content creation and targeted campaigns have significantly 
+              boosted Metro United Healthcare’s digital presence since 2018. Through a combination of 
+              department introductions, health tips, doctor sessions, and community initiatives, the hospital 
+              has increased brand awareness and patient engagement. Metro United has successfully positioned 
+              itself as a trusted healthcare provider, consistently growing digital interactions, patient trust, 
+              and service promotions across all platforms.
+            </p>
+          </div>
+          
+    </div>
+    <footer class="bg-[#44433F] text-white p-10">
+      <div class="xl:max-w-[70vw] mx-auto">
+        <!-- Flex container for larger screens, grid for smaller screens -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-evenly"
+        >
+          <!-- Company Info -->
+          <div class="w-full mb-6 md:mb-0">
+            <img
+              src="./contact-us-img/sunrise-logo1-5.png"
+              alt="Sunrise Digital Logo"
+              class="mb-4 w-[236px] h-[60px]"
+            />
+            <p class="text-sm">
+              Sunrise Digital is a full-service digital marketing agency that
+              spends quality time to understand your business and develops a
+              strategy to drive business goals. We can help you accelerate your
+              online growth and boost your digital marketing returns by working
+              together.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div class="w-full">
+            <h3 class="font-bold mb-4">Quick Link</h3>
+            <ul class="text-sm">
+              <li><a href="#" class="hover:underline">Our Story</a></li>
+              <li><a href="#" class="hover:underline">Services</a></li>
+              <li><a href="#" class="hover:underline">Case Study</a></li>
+              <li><a href="#" class="hover:underline">Careers</a></li>
+              <li><a href="#" class="hover:underline">Blog</a></li>
+            </ul>
+          </div>
+          <!-- Address and Contact -->
+          <div class="w-full">
+            <h3 class="font-bold mb-4">Address</h3>
+            <p class="text-sm">
+              MEHTA ARCADE, 2nd Floor,<br />
+              15th Cross, Outer Ring Rd, near<br />
+              Sorokki Signal, Sorokki Kere,<br />
+              Bengaluru, Karnataka 560078<br />
+              <br />
+              Mon-Sat | 10AM - 7PM<br />
+              <br />
+              Phone:
+              <a href="tel:7259620224" class="hover:underline">7259620224</a>
+            </p>
+          </div>
+          <!-- Social Media and Policies -->
+          <div class="w-full">
+            <h3 class="font-bold mb-4">Follow Us</h3>
+            <div class="flex space-x-4 mb-6">
+              <a href="#"
+                ><img src="path-to-icon1.png" alt="Social Icon 1"
+              /></a>
+              <a href="#"
+                ><img src="path-to-icon2.png" alt="Social Icon 2"
+              /></a>
+              <a href="#"
+                ><img src="path-to-icon3.png" alt="Social Icon 3"
+              /></a>
+            </div>
+            <ul class="text-sm">
+              <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+              <li>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="hover:underline">Refund Policy</a></li>
+              <li><a href="#" class="hover:underline">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-10">
+          <p class="text-sm">© 2024 Sunrise Digital Media</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  }
+</script>

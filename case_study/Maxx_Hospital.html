@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaAx Super Speciality Hospital - Case Study</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+      .navbar-logo {
+        height: 125px;
+        width: auto;
+      }
+      .icon-size {
+        height: 40px;
+        width: auto;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      /* Ensure logo resizes properly */
+      .navbar-logo {
+        height: 125px; /* Adjust based on design */
+        width: auto;
+      }
+      .icon-size {
+        height: 40px; /* Adjust size */
+        width: auto;
+      }
+      .textarea::placeholder {
+        color: red;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="w-full xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8 text-[#44433F]"
+    >
+      <nav class="py-4">
+        <div class="flex items-center justify-between">
+          <!-- Left Section -->
+          <div class="flex items-center space-x-4">
+            <!-- Mobile Logo: visible only on small screens -->
+            <div class="block lg:hidden">
+              <img
+                src="../contact-us-img/sunrise-logo1-5.png"
+                alt="Logo"
+                class="navbar-logo object-contain"
+              />
+            </div>
+            <!-- Desktop Social Icons: visible only on large screens -->
+            <div class="hidden lg:flex space-x-4">
+              <a href="#" class="text-gray-600 hover:opacity-75">
+                <img
+                  src="../our-stories-img/subtract.svg"
+                  alt="Facebook"
+                  class="icon-size"
+                />
+              </a>
+              <a href="#" class="text-gray-600 hover:opacity-75">
+                <img
+                  src="../our-stories-img/fi-3670274.svg"
+                  alt="Instagram"
+                  class="icon-size"
+                />
+              </a>
+              <a href="#" class="text-gray-600 hover:opacity-75">
+                <img
+                  src="../our-stories-img/group.png"
+                  alt="Twitter"
+                  class="icon-size h-20 w-20"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Center Section: Desktop Logo (only on larger screens) -->
+          <div class="hidden lg:block">
+            <img
+              src="../contact-us-img/sunrise-logo1-5.png"
+              alt="Logo"
+              class="navbar-logo object-contain"
+            />
+          </div>
+
+          <!-- Right Section -->
+          <div class="flex items-center space-x-6">
+            <!-- Desktop Get in Touch Button: hidden on mobile -->
+            <button
+              class="hidden lg:inline bg-[#FFA314] text-[#44433F] px-6 py-3 rounded-full text-2xl font-bold leading-[30px]"
+            >
+              Get in Touch
+            </button>
+            <!-- Hamburger Menu: visible on all screens -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 text-2xl focus:outline-none"
+              onclick="toggleMenu()"
+            >
+              <img
+                src="../our-stories-img/frame-1000001855.svg"
+                alt="Menu"
+                class="h-14 w-16"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div class="relative">
+          <div
+            id="mobile-menu"
+            class="hidden mt-4 bg-white shadow-lg p-4 rounded-lg"
+          >
+            <a
+              href="/"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-home mr-2"></i> Home
+            </a>
+            <a
+              href="/our-stories.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-info-circle mr-2"></i> About
+            </a>
+            <a
+              href="/service.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-cogs mr-2"></i> Services
+            </a>
+            <a
+              href="/case-studies.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-book-open mr-2"></i> Case Study
+            </a>
+            <a
+              href="/blog.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-blog mr-2"></i> Blogs
+            </a>
+            <a
+              href="/career.html"
+              class="block text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out"
+            >
+              <i class="fas fa-briefcase mr-2"></i> Careers
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text-4xl font-bold text-center mb-6">
+        Case Study Report: MaAx Super Speciality Hospital - Social Media Campaign Management by Sunrise Digital Media (2018 - Ongoing)
+      </h1>
+
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold">Campaign Overview</h2>
+        <p>
+          Sunrise Digital Media has managed the social media presence of MaAx Super Speciality Hospital since 2018, promoting various multispecialty services and health awareness campaigns across major social media platforms. Our focus has been on building the hospital’s digital footprint and engaging the community with health-related promotions, awareness campaigns, and service-oriented content. Over time, the campaign has successfully increased online reach, engagement, and interactions across all platforms.
+        </p>
+
+        <h3 class="text-xl font-bold">Campaign Start Date: 2018 (Ongoing)</h3>
+
+        <h3 class="text-xl font-bold">Managed Platforms:</h3>
+        <ul class="list-disc pl-6">
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>YouTube</li>
+        </ul>
+
+        <h3 class="text-xl font-bold">Facebook:</h3>
+        <ul class="list-disc pl-6">
+          <li>Reach: 98.2K+</li>
+          <li>Page Visits: 24.7K+</li>
+          <li>Followers: 522+</li>
+        </ul>
+
+        <h3 class="text-xl font-bold">Instagram:</h3>
+        <ul class="list-disc pl-6">
+          <li>Reach: 84.8K+</li>
+          <li>Profile Visits: 22.1K+</li>
+          <li>Followers: 883+</li>
+          <li>Engagement: 4.7K+</li>
+          <li>Interactions: 19.2K+</li>
+          <li>Post Interactions: 15.9K</li>
+        </ul>
+
+        <h3 class="text-xl font-bold">YouTube:</h3>
+        <ul class="list-disc pl-6">
+          <li>Views: 718.4K+</li>
+          <li>Watch Time: 7.4K+ hours</li>
+          <li>Subscribers: 1.8K+</li>
+          <li>Impressions: 9.2M+</li>
+          <li>Views from Impressions: 421.3K+</li>
+          <li>Watch Time from Impressions: 5.5K+ hours</li>
+        </ul>
+
+        <h3 class="text-xl font-bold">Overall Performance:</h3>
+        <ul class="list-disc pl-6">
+          <li>Total Reach: 222.5K+</li>
+          <li>Total Impressions: 86.6K+</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold">Key Campaigns and Promotions</h2>
+
+        <h3 class="text-xl font-bold">1. Department Awareness Campaigns</h3>
+        <p>
+          The campaign started with raising awareness across multiple departments, including Orthopedics, Dental, Gynecology, Pediatrics, Plastic Surgery, Cardiology, Critical Care, Urology, Gastroenterology, and other multispecialty services. Each department was spotlighted with targeted content highlighting services, facilities, and doctors, driving engagement from local communities.
+        </p>
+
+        <h3 class="text-xl font-bold">2. Heart Health Awareness Campaign</h3>
+        <p>
+          Focused on promoting heart health, this campaign aimed to educate the audience about cardiovascular care, early detection of heart diseases, and preventive measures. Interactive posts, doctor consultations, and patient testimonials were used to drive engagement.
+        </p>
+
+        <h3 class="text-xl font-bold">3. Bone Mineral Density (BMD) Camp</h3>
+        <p>
+          A "Get Free BMD Test" campaign was launched, encouraging people to take proactive steps in monitoring their bone health. This campaign was widely shared and contributed to increased visits and bookings.
+        </p>
+
+        <h3 class="text-xl font-bold">4. Children’s Day Health Awareness Campaign</h3>
+        <p>
+          A special Pediatric and Children’s Health campaign was designed for Children’s Day. The content was focused on child health tips, pediatric care services, and common childhood conditions, generating high engagement from parents.
+        </p>
+
+        <h3 class="text-xl font-bold">5. Doctor Promotions</h3>
+        <p>
+          Individual campaigns promoted various doctors from multiple specialties, introducing the experts to the audience. This helped boost trust and increased patient inquiries.
+        </p>
+
+        <h3 class="text-xl font-bold">6. Kidney Transplantation Milestone</h3>
+        <p>
+          We promoted the hospital’s first-ever kidney transplantation in the Malnad region. This achievement gained significant traction, with patient success stories and doctor interviews featured prominently.
+        </p>
+
+        <h3 class="text-xl font-bold">7. Lung Health Awareness Campaign</h3>
+        <p>
+          This campaign highlighted the importance of lung health, targeting respiratory conditions such as asthma, bronchitis, and COPD. Awareness was created around the hospital's specialized treatments and services for lung diseases.
+        </p>
+
+        <h3 class="text-xl font-bold">8. Diabetes Awareness Campaign</h3>
+        <p>
+          A focused campaign on diabetes was launched, offering health tips, diet plans, and guidance on managing diabetes effectively. This was promoted in conjunction with World Diabetes Day, attracting significant interactions and community engagement.
+        </p>
+
+        <h3 class="text-xl font-bold">9. Squint Eye Surgery Success</h3>
+        <p>
+          A success story about a squint eye surgery was shared, raising awareness of advanced eye care treatments available at the hospital. This was shared widely and received positive feedback from the community.
+        </p>
+
+        <h3 class="text-xl font-bold">10. Summer Health Tips Campaign</h3>
+        <p>
+          During summer, we launched a series of health tips focused on staying hydrated, heatstroke prevention, and summer-related illnesses. This content resonated well with the audience, driving increased engagement.
+        </p>
+
+        <h3 class="text-xl font-bold">11. Sickle Cell Awareness Campaign</h3>
+        <p>
+          Another important health awareness initiative was dedicated to Sickle Cell Disease. We educated the public about the symptoms, treatments, and available services, raising awareness on this important health issue.
+        </p>
+
+        <h3 class="text-xl font-bold">12. Extra Awareness Campaigns</h3>
+        <ul class="list-disc pl-6">
+          <li>Monsoon & Dengue Awareness: Focused on educating the public about mosquito-borne diseases such as dengue, and sharing preventive measures to stay safe during the monsoon season.</li>
+          <li>COVID-19 Awareness: Aimed at raising awareness about COVID-19 symptoms, safety protocols, and the hospital's available services during the pandemic, including testing, treatment, and vaccination.</li>
+          <li>Emergency and Quick Services: Highlighted the hospital’s 24/7 emergency services and critical care units, ensuring that the public is aware of the fast response and support during health emergencies.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold">Video Marketing</h2>
+        <h3 class="text-xl font-bold">1. YouTube:</h3>
+        <p>
+          With 718.4K+ views and 7.4K+ hours of watch time, YouTube has been a powerful platform for promoting the hospital’s services. MaAx Super Speciality Hospital’s YouTube content has revolved around patient testimonials, success stories, and health education, driving 9.2M+ impressions and generating 421.3K+ views from those impressions.
+        </p>
+
+        <h2 class="text-2xl font-bold">Results & Impact</h2>
+        <p>
+          Sunrise Digital’s holistic approach in managing MaAx Super Speciality Hospital’s digital presence has resulted in:
+        </p>
+        <ul class="list-disc pl-6">
+          <li>Significant improvement in the hospital’s brand visibility across platforms.</li>
+          <li>Increased patient engagement, with a substantial rise in online inquiries, appointments, and health package sales.</li>
+          <li>Success in awareness campaigns, raising public knowledge about various health conditions and preventive measures.</li>
+          <li>Enhanced online reputation, with positive reviews and increased customer trust across all managed platforms.</li>
+        </ul>
+        <p>
+          Sunrise Digital continues to drive MaAx Super Speciality Hospital's growth through strategic campaigns, consistent engagement, and a data-driven approach to digital marketing.
+        </p>
+
+        <h2 class="text-2xl font-bold">Conclusion</h2>
+        <p>
+          Through comprehensive social media strategies and targeted campaigns, MaAx Super Speciality Hospital has successfully increased its digital presence and fostered a strong community connection. By consistently promoting health-related content and service-oriented campaigns, the hospital has improved its reach and engagement across all platforms. Our efforts have also contributed to an increase in inquiries, consultations, and patient trust, making MaAx a trusted name in multispecialty healthcare services in the region.
+        </p>
+
+        <h2 class="text-2xl font-bold">Future Plans</h2>
+        <p>
+          We plan to continue building on this success by introducing more patient-centric campaigns, promoting advanced treatment options, and utilizing interactive content to further engage with the audience across all social media platforms.
+        </p>
+      </div>
+    </div>
+   
+  </body>
+</html>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  }
+</script>
