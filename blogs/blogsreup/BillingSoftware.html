@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing Software for Small Businesses: Features You Need</title>
+    <!-- Import Quicksand font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Apply Quicksand font to the body -->
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+      .textarea::placeholder {
+        color: red;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .nav-button {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .nav-button:hover {
+        background-color: rgba(255, 163, 20, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8">
+      <nav class="">
+        <div class="flex items-center justify-between">
+          <!-- Left Section: Logo (visible on all screens) -->
+          <div class="flex items-center">
+            <img
+              src="../contact-us-img/sunrise-logo1-5.png"
+              alt="Logo"
+              class="navbar-logo object-contain h-20 md:h-32"
+            />
+          </div>
+
+          <!-- Right Section: Hamburger Menu (visible on small screens) and Get in Touch Button (visible on large screens) -->
+          <div class="flex items-center space-x-6">
+            <!-- Desktop Get in Touch Button: hidden on mobile -->
+            <button
+              class="hidden lg:inline bg-[#FFA314] text-[#44433F] px-6 py-3 rounded-full text-lg md:text-2xl font-bold leading-[30px]"
+            >
+              Get in Touch
+            </button>
+            <!-- Hamburger Menu: visible on all screens -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 text-2xl focus:outline-none"
+            >
+              <img
+                src="../our-stories-img/frame-1000001855.svg"
+                alt="Menu"
+                class="h-10 w-10 md:h-14 md:w-16"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Center Section: Desktop Social Icons (hidden on mobile) -->
+        <div class="hidden lg:flex items-center justify-center mt-4 space-x-4">
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/subtract.svg"
+              alt="Facebook"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/fi-3670274.svg"
+              alt="Instagram"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/group.png"
+              alt="Twitter"
+              class="icon-size"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden mt-4 bg-white shadow-lg p-4">
+          <a href="#" class="block text-gray-700 py-2">Home</a>
+          <a href="#" class="block text-gray-700 py-2">About</a>
+          <a href="#" class="block text-gray-700 py-2">Services</a>
+          <a href="#" class="block text-gray-700 py-2">Contact</a>
+        </div>
+      </nav>
+
+      <div>
+        <div>
+          <h1
+            class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] text-[#44433F] leading-normal"
+          >
+            Billing Software for Small Businesses: Features You Need
+          </h1>
+        </div>
+
+        <div class="relative mt-10">
+          <div class="flex items-center justify-center">
+            <!-- Left navigation button -->
+            <button class="nav-button absolute left-0 z-10 ml-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            
+            <!-- Main image -->
+            <img
+              src="https://img.freepik.com/free-vector/online-payment-concept-illustration_114360-7266.jpg"
+              class="rounded-[55px] w-full"
+              alt="Online payment concept illustration"
+            />
+            
+            <!-- Right navigation button -->
+            <button class="nav-button absolute right-0 z-10 mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal pt-10"
+          >
+            In the world of small business, managing finances efficiently is essential. The right billing
+            software can simplify invoicing, streamline payment processing, and help maintain cash flow.
+            Let's explore the must-have features for billing software tailored to small businesses.
+          </p>
+        </div>
+        
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            1. User-Friendly Invoicing Solutions
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · A simple, user-friendly interface is key for small businesses without a dedicated
+            finance team.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Customizable invoice templates add a professional touch and speed up the invoicing
+            process.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Look for invoicing solutions that allow easy tracking of unpaid bills and auto-
+            reminders for overdue payments.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            2. Seamless Payment Processing
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Multiple Payment Options:</span> Ensure the software supports credit cards, debit cards,
+            and digital wallets.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Automatic Payment Reminders:</span> Reminders improve cash flow and reduce missed
+            payments.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Recurring Billing:</span> Ideal for subscription-based businesses or service providers,
+            making regular payments automated and predictable.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            3. Expense Management
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Tracking and categorizing expenses directly within the billing software provides real-
+            time financial insights.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Features like receipt capture, expense tagging, and report generation help small
+            businesses maintain a detailed expense record.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            4. Tax Calculation and Compliance
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Software with tax calculation features simplifies end-of-year reporting and ensures
+            compliance with tax regulations.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Built-in tax support helps avoid costly errors and keeps invoicing accurate and legal.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            5. Mobile Access and Cloud Integration
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Cloud-based billing software offers on-the-go access, ideal for entrepreneurs who
+            need flexibility.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Mobile-friendly applications let small business owners check invoices, send
+            reminders, and process payments from anywhere.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            6. Reporting and Analytics
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Detailed reports on revenue, expenses, and outstanding invoices give small businesses
+            a clear financial overview.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Software with data-driven insights helps in decision-making and identifying growth
+            opportunities.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            7. Integration with Accounting Tools
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · Seamless integration with popular accounting tools (like QuickBooks, Xero)
+            streamlines bookkeeping.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · This feature reduces the need for manual data entry, saving time and improving
+            accuracy.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            Conclusion
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Billing software is essential for any small business aiming to maintain organized finances.
+            When selecting billing software, look for features like invoicing solutions, payment
+            processing, tax support, and integration with accounting tools.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Navigation functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const leftButton = document.querySelector('.nav-button:first-child');
+        const rightButton = document.querySelector('.nav-button:last-child');
+        
+        leftButton.addEventListener('click', function() {
+          // Replace with actual previous page URL
+          window.location.href = 'previous-page.html'; 
+        });
+        
+        rightButton.addEventListener('click', function() {
+          // Replace with actual next page URL
+          window.location.href = 'next-page.html'; 
+        });
+      });
+    </script>
+  </body>
+</html>

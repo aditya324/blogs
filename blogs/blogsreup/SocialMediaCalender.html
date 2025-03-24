@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating a B2B-Focused Social Media Calendar</title>
+    <!-- Import Quicksand font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Apply Quicksand font to the body -->
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+      .textarea::placeholder {
+        color: red;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .nav-button {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .nav-button:hover {
+        background-color: rgba(255, 163, 20, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8">
+      <nav class="">
+        <div class="flex items-center justify-between">
+          <!-- Left Section: Logo (visible on all screens) -->
+          <div class="flex items-center">
+            <img
+              src="../contact-us-img/sunrise-logo1-5.png"
+              alt="Logo"
+              class="navbar-logo object-contain h-20 md:h-32"
+            />
+          </div>
+
+          <!-- Right Section: Hamburger Menu (visible on small screens) and Get in Touch Button (visible on large screens) -->
+          <div class="flex items-center space-x-6">
+            <!-- Desktop Get in Touch Button: hidden on mobile -->
+            <button
+              class="hidden lg:inline bg-[#FFA314] text-[#44433F] px-6 py-3 rounded-full text-lg md:text-2xl font-bold leading-[30px]"
+            >
+              Get in Touch
+            </button>
+            <!-- Hamburger Menu: visible on all screens -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 text-2xl focus:outline-none"
+            >
+              <img
+                src="../our-stories-img/frame-1000001855.svg"
+                alt="Menu"
+                class="h-10 w-10 md:h-14 md:w-16"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Center Section: Desktop Social Icons (hidden on mobile) -->
+        <div class="hidden lg:flex items-center justify-center mt-4 space-x-4">
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/subtract.svg"
+              alt="Facebook"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/fi-3670274.svg"
+              alt="Instagram"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/group.png"
+              alt="Twitter"
+              class="icon-size"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden mt-4 bg-white shadow-lg p-4">
+          <a href="#" class="block text-gray-700 py-2">Home</a>
+          <a href="#" class="block text-gray-700 py-2">About</a>
+          <a href="#" class="block text-gray-700 py-2">Services</a>
+          <a href="#" class="block text-gray-700 py-2">Contact</a>
+        </div>
+      </nav>
+
+      <div>
+        <div>
+          <h1
+            class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] text-[#44433F] leading-normal"
+          >
+            Creating a B2B-Focused Social Media Calendar
+          </h1>
+        </div>
+
+        <div class="relative mt-10">
+          <div class="flex items-center justify-center">
+            <!-- Left navigation button -->
+            <button class="nav-button absolute left-0 z-10 ml-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            
+            <!-- Main image -->
+            <img
+              src="https://img.freepik.com/free-vector/creative-planning-schedule-concept_3150800.htm"
+              class="rounded-[55px] w-full"
+              alt="Creative planning schedule concept"
+            />
+            
+            <!-- Right navigation button -->
+            <button class="nav-button absolute right-0 z-10 mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal pt-10"
+          >
+            For B2B (Business-to-Business) companies, social media isn't just a tool for building brand awareness—it's also a key channel for generating leads, nurturing relationships, and positioning a company as an industry leader. A well-organized social media calendar helps streamline content creation, ensure consistency, and align marketing efforts with broader business goals.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal pt-5"
+          >
+            Here's a step-by-step guide to creating a B2B-focused social media calendar.
+          </p>
+        </div>
+        
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            1. Define Your Objectives and KPIs
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Before you start creating your social media calendar, clearly define your objectives. What are you hoping to achieve through your social media efforts? Some common B2B objectives include:
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Lead generation:</span> Driving potential clients to your website or landing pages.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Thought leadership:</span> Positioning your company as an industry expert through insightful content.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Brand awareness:</span> Increasing visibility in your target industry or market.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Customer engagement:</span> Building deeper relationships with existing customers.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Once your goals are clear, establish key performance indicators (KPIs) to track success. KPIs may include engagement rates, clicks, lead generation, website traffic, or the number of conversions. Tracking these metrics will help you gauge the effectiveness of your posts.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            2. Identify Your Target Audience
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            B2B social media marketing requires a laser-focused approach to targeting. Determine the specific audience segments you are trying to reach. This could include decision-makers such as CEOs, purchasing managers, or IT directors, depending on your business. Understand their pain points, needs, and preferences.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Knowing your audience will help you tailor your content to address relevant topics, use the right tone, and post on platforms they frequent most (such as LinkedIn or Twitter).
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            3. Choose the Right Platforms
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            While B2C companies often use platforms like Instagram and TikTok, B2B companies should focus on platforms where professional audiences are most active. Here's a breakdown of key platforms for B2B:
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">LinkedIn:</span> The leading platform for B2B. Ideal for sharing thought leadership, company updates, case studies, and industry news.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Twitter:</span> Great for real-time engagement, industry trends, and conversations with your audience. Also useful for sharing blog content and event information.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Facebook:</span> Though more popular for B2C, Facebook Groups or paid ads can be used for community engagement and lead generation.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">YouTube:</span> Useful for sharing webinars, product demos, case studies, or instructional content.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Instagram:</span> While not always top of mind for B2B, it can work well for industries with strong visual elements, like tech or manufacturing.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            4. Develop Core Content Themes
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            To keep your content varied and engaging, build a set of core themes to guide your posts. This will ensure you cover all aspects of your brand and provide value to your audience. Some effective B2B content themes include:
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Educational content:</span> Share tips, how-to guides, and tutorials related to your industry.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Thought leadership:</span> Provide expert insights or commentary on industry trends or news.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Product and service highlights:</span> Promote the unique features of your solutions with demos, infographics, or case studies.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Client success stories:</span> Showcase case studies or testimonials to build credibility.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Industry events or webinars:</span> Promote upcoming events, trade shows, or webinars.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Employee features or company culture:</span> Highlight your team and showcase company culture to attract talent and humanize your brand.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            By rotating these themes throughout the month, you'll maintain consistency while keeping your content fresh.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            5. Create a Posting Schedule
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Once your content themes are established, decide on a posting frequency for each platform. B2B companies should prioritize quality over quantity. For instance:
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">LinkedIn:</span> 3–4 posts per week.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Twitter:</span> 1–2 posts per day, with real-time engagement.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Facebook:</span> 2–3 posts per week.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">YouTube:</span> 1 video per week or biweekly, depending on production capacity.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Use your calendar to schedule each post, assigning it to a specific platform, day, and time. Consider factors like:
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Optimal posting times:</span> Review analytics to determine when your audience is most active on each platform.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Campaign alignment:</span> Schedule posts around product launches, webinars, or industry events to maximize impact.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            6. Plan Content Creation in Advance
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            A strong social media calendar requires planned, high-quality content. This could include a mix of blog posts, videos, infographics, webinars, and curated industry news. Assign content creation tasks to your marketing team, freelancers, or design team with enough lead time to meet posting deadlines.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Here are some tips for planning:
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Plan one month in advance:</span> This allows for flexibility while ensuring you're not scrambling for content at the last minute.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Repurpose content:</span> Use blog posts or whitepapers to create shorter social media posts, infographics, or videos.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Use tools for automation:</span> Platforms like Buffer, Hootsuite, or Sprout Social can help automate posts, saving time and ensuring posts go live on schedule.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            7. Incorporate Paid Campaigns
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            In addition to organic content, B2B marketers can benefit from paid social media ads to target specific audiences. LinkedIn, for example, allows for detailed targeting options, including job title, industry, and company size. Twitter and Facebook also offer powerful retargeting capabilities that can re-engage website visitors or previous leads.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Use your social media calendar to integrate paid campaigns with organic content. Align ads with product launches, promotions, or events, and ensure your messaging is consistent across both paid and organic efforts.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            8. Track Performance and Adjust
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            After implementing your social media calendar, it's critical to measure the results and make adjustments based on performance. Analyze engagement, clicks, and conversions regularly to see which posts are resonating with your audience.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Use this data to:
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Refine content themes:</span> If one type of content (e.g., client success stories) performs better than another, consider increasing its frequency.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Optimize posting times:</span> Adjust your schedule based on when your audience is most engaged.
+          </p>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            · <span class="font-bold">Test new content:</span> Experiment with new formats like live videos, polls, or interactive content to keep your social media presence dynamic.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            Conclusion
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            A B2B-focused social media calendar ensures that your efforts are well-organized, strategic, and aligned with your business objectives. By defining your goals, targeting the right audience, and maintaining a consistent, varied content schedule, you'll drive better engagement, foster stronger relationships, and generate valuable leads.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Navigation functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const leftButton = document.querySelector('.nav-button:first-child');
+        const rightButton = document.querySelector('.nav-button:last-child');
+        
+        leftButton.addEventListener('click', function() {
+          // Replace with actual previous page URL
+          window.location.href = './TvCommercial.html'; 
+        });
+        
+        rightButton.addEventListener('click', function() {
+          // Replace with actual next page URL
+          window.location.href = './MarketingFunnel.html'; 
+        });
+      });
+    </script>
+  </body>
+</html>
