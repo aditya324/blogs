@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Create a Video Marketing Strategy That Works</title>
+    <!-- Import Quicksand font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Apply Quicksand font to the body -->
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+      .textarea::placeholder {
+        color: red;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .nav-button {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .nav-button:hover {
+        background-color: rgba(255, 163, 20, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8">
+      <nav class="">
+        <div class="flex items-center justify-between">
+          <!-- Left Section: Logo (visible on all screens) -->
+          <div class="flex items-center">
+            <img
+              src="../contact-us-img/sunrise-logo1-5.png"
+              alt="Logo"
+              class="navbar-logo object-contain h-20 md:h-32"
+            />
+          </div>
+
+          <!-- Right Section: Hamburger Menu (visible on small screens) and Get in Touch Button (visible on large screens) -->
+          <div class="flex items-center space-x-6">
+            <!-- Desktop Get in Touch Button: hidden on mobile -->
+            <button
+              class="hidden lg:inline bg-[#FFA314] text-[#44433F] px-6 py-3 rounded-full text-lg md:text-2xl font-bold leading-[30px]"
+            >
+              Get in Touch
+            </button>
+            <!-- Hamburger Menu: visible on all screens -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 text-2xl focus:outline-none"
+            >
+              <img
+                src="../our-stories-img/frame-1000001855.svg"
+                alt="Menu"
+                class="h-10 w-10 md:h-14 md:w-16"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Center Section: Desktop Social Icons (hidden on mobile) -->
+        <div class="hidden lg:flex items-center justify-center mt-4 space-x-4">
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/subtract.svg"
+              alt="Facebook"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/fi-3670274.svg"
+              alt="Instagram"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/group.png"
+              alt="Twitter"
+              class="icon-size"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden mt-4 bg-white shadow-lg p-4">
+          <a href="#" class="block text-gray-700 py-2">Home</a>
+          <a href="#" class="block text-gray-700 py-2">About</a>
+          <a href="#" class="block text-gray-700 py-2">Services</a>
+          <a href="#" class="block text-gray-700 py-2">Contact</a>
+        </div>
+      </nav>
+
+      <div>
+        <div>
+          <h1
+            class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] text-[#44433F] leading-normal"
+          >
+            How to Create a Video Marketing Strategy That Works
+          </h1>
+        </div>
+
+        <div class="relative mt-10">
+          <div class="flex items-center justify-center">
+            <!-- Left navigation button -->
+            <button class="nav-button absolute left-0 z-10 ml-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            
+            <!-- Main image -->
+            <img
+              src="https://img.freepik.com/free-vector/live-stream-concept_7765216.jpg"
+              class="rounded-[55px] w-full"
+              alt="Video marketing illustration"
+            />
+            
+            <!-- Right navigation button -->
+            <button class="nav-button absolute right-0 z-10 mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal pt-10"
+          >
+            Video marketing has become one of the most effective tools in digital marketing, helping brands engage audiences, drive conversions, and increase brand loyalty. But to create videos that resonate, businesses need a well-structured video marketing strategy that aligns with their goals and audience needs. Here's how to build a video marketing strategy that truly works.
+          </p>
+        </div>
+        
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            1. Define Your Video Marketing Goals
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Set Specific Objectives
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Decide what you want to achieve with video—brand awareness, lead generation, customer education, or engagement.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Align with Business Goals
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Make sure your video goals support broader business objectives, such as increasing sales, boosting website traffic, or building social media presence.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Choose Measurable Metrics
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Identify KPIs to measure success, such as view count, engagement rate, click-through rate (CTR), and conversions.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            2. Understand Your Target Audience
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Identify Demographics and Preferences
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Knowing your audience's age, interests, and challenges will help in crafting relevant video content.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Research Viewing Habits
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Determine where your audience spends time online, whether on YouTube, Instagram, LinkedIn, or TikTok, to target content accordingly.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Create Buyer Personas
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Develop personas to guide content creation, ensuring your videos resonate with specific audience needs and behaviors.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            3. Plan Your Video Content Types
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Educational Videos
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Tutorials, how-tos, and explainer videos can build brand credibility.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Product Demos and Reviews
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Showcase product features or customer testimonials to drive trust and conversions.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Behind-the-Scenes Content
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Humanize your brand by showing company culture, processes, or employee stories.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Live Videos and Webinars
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Engage audiences in real-time with interactive sessions, fostering stronger brand relationships.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            4. Develop a Content Creation Process
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Script and Storyboard
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Plan each video's message, flow, and visuals to ensure a cohesive story.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Budget and Resources
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Determine the budget for production and whether to handle in-house or hire professionals.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Set a Production Schedule
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Map out a timeline for shooting, editing, and publishing videos to maintain consistency.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            5. Optimize Videos for Each Platform
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Adjust Formats and Lengths
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Tailor videos to each platform's best practices—short, engaging clips for Instagram and TikTok; longer, in-depth content for YouTube.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Optimize for Mobile Viewing
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Ensure videos are mobile-friendly, as a majority of viewers access content on mobile devices.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Add Captions and Thumbnails
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Captions make videos accessible, and engaging thumbnails encourage clicks, improving visibility and engagement.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            6. Promote Videos Effectively
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Use Multi-Channel Promotion
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Share videos across social media, email newsletters, and your website to reach a broader audience.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Encourage Social Sharing
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Add share buttons and encourage viewers to share, helping to increase organic reach.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Collaborate with Influencers or Partners
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Tap into new audiences by partnering with industry influencers or complementary brands for broader exposure.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            7. Measure and Adjust Your Strategy
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Track Key Metrics
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Monitor video performance on platforms to evaluate engagement, view duration, shares, and comments.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Gather Audience Feedback
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Read comments and conduct surveys to understand what viewers find valuable and where to improve.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Optimize Based on Data
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Regularly analyze insights and make adjustments to content type, format, and promotion strategies for continuous improvement.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            Conclusion
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            A video marketing strategy that works is built on clear goals, deep audience insights, and consistent, optimized content. By planning purpose-driven videos, promoting them effectively, and continuously analyzing results, businesses can create video content that captivates, engages, and converts.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Navigation functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const leftButton = document.querySelector('.nav-button:first-child');
+        const rightButton = document.querySelector('.nav-button:last-child');
+        
+        leftButton.addEventListener('click', function() {
+          // Replace with actual previous page URL
+          window.location.href = './BooastEngagement.html'; 
+        });
+        
+        rightButton.addEventListener('click', function() {
+          // Replace with actual next page URL
+          window.location.href = './BrandGuidelines.html'; 
+        });
+      });
+    </script>
+  </body>
+</html>

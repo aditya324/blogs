@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Create an Effective Brand Guideline</title>
+    <!-- Import Quicksand font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Apply Quicksand font to the body -->
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+      .textarea::placeholder {
+        color: red;
+        opacity: 0.5;
+        margin-left: 10px;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .nav-button {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .nav-button:hover {
+        background-color: rgba(255, 163, 20, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8">
+      <nav class="">
+        <div class="flex items-center justify-between">
+          <!-- Left Section: Logo (visible on all screens) -->
+          <div class="flex items-center">
+            <img
+              src="../contact-us-img/sunrise-logo1-5.png"
+              alt="Logo"
+              class="navbar-logo object-contain h-20 md:h-32"
+            />
+          </div>
+
+          <!-- Right Section: Hamburger Menu (visible on small screens) and Get in Touch Button (visible on large screens) -->
+          <div class="flex items-center space-x-6">
+            <!-- Desktop Get in Touch Button: hidden on mobile -->
+            <button
+              class="hidden lg:inline bg-[#FFA314] text-[#44433F] px-6 py-3 rounded-full text-lg md:text-2xl font-bold leading-[30px]"
+            >
+              Get in Touch
+            </button>
+            <!-- Hamburger Menu: visible on all screens -->
+            <button
+              id="menu-btn"
+              class="text-gray-600 text-2xl focus:outline-none"
+            >
+              <img
+                src="../our-stories-img/frame-1000001855.svg"
+                alt="Menu"
+                class="h-10 w-10 md:h-14 md:w-16"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Center Section: Desktop Social Icons (hidden on mobile) -->
+        <div class="hidden lg:flex items-center justify-center mt-4 space-x-4">
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/subtract.svg"
+              alt="Facebook"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/fi-3670274.svg"
+              alt="Instagram"
+              class="icon-size"
+            />
+          </a>
+          <a href="#" class="text-gray-600 hover:opacity-75">
+            <img
+              src="../our-stories-img/group.png"
+              alt="Twitter"
+              class="icon-size"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden mt-4 bg-white shadow-lg p-4">
+          <a href="#" class="block text-gray-700 py-2">Home</a>
+          <a href="#" class="block text-gray-700 py-2">About</a>
+          <a href="#" class="block text-gray-700 py-2">Services</a>
+          <a href="#" class="block text-gray-700 py-2">Contact</a>
+        </div>
+      </nav>
+
+      <div>
+        <div>
+          <h1
+            class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] text-[#44433F] leading-normal"
+          >
+            How to Create an Effective Brand Guideline
+          </h1>
+        </div>
+
+        <div class="relative mt-10">
+          <div class="flex items-center justify-center">
+            <!-- Left navigation button -->
+            <button class="nav-button absolute left-0 z-10 ml-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            
+            <!-- Main image -->
+            <img
+              src="https://img.freepik.com/free-vector/personal-branding-isometric-concept-with-business-self-development-symbols-vector-illustration_64992392.jpg"
+              class="rounded-[55px] w-full"
+              alt="Brand guideline illustration"
+            />
+            
+            <!-- Right navigation button -->
+            <button class="nav-button absolute right-0 z-10 mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal pt-10"
+          >
+            A strong brand guideline ensures consistency across all marketing materials, enhancing your brand's visual identity and creating a cohesive branding strategy. Here's a step-by-step guide to building an effective brand guideline.
+          </p>
+        </div>
+        
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            1. Define Your Brand's Core Elements
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Mission, Vision, and Values
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Clearly articulate what your brand stands for. This foundation informs all aspects of branding strategy and shapes customer perceptions.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Brand Personality
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Define the tone and personality traits your brand embodies—whether friendly, professional, innovative, or traditional.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            2. Establish Visual Identity Essentials
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Logo Usage
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Outline guidelines on logo placement, sizing, color variations, and clear space requirements to maintain visual identity.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Color Palette
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Specify primary, secondary, and neutral colors, including HEX, RGB, and CMYK codes, to ensure marketing consistency across platforms.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Typography
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Define fonts for headings, body text, and accent text, and give instructions for size hierarchy and formatting preferences.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            3. Set Guidelines for Imagery and Graphic Elements
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Image Style
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Describe the types of images that align with your brand's message (e.g., vibrant lifestyle photos, clean and minimalistic visuals).
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Icons and Graphics
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Include guidelines on the use of icons, illustrations, and other graphic elements, covering styles, colors, and themes for a cohesive look.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            4. Define Your Brand Voice and Tone
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Voice Consistency
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Describe how your brand communicates (e.g., formal, casual, playful) to ensure a uniform experience across customer touchpoints.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Tone Adaptation
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            While the voice stays consistent, explain how tone may shift in different contexts (e.g., product descriptions, customer service interactions).
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            5. Set Rules for Content and Marketing Consistency
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Content Guidelines
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Detail standards for writing style, punctuation, grammar, and specific phrases or terminology unique to the brand.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Social Media Presence
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Define how the brand's voice translates across social platforms, including post frequency, preferred themes, and community engagement tips.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            6. Provide Guidelines for Implementation and Brand Application
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Consistency Across Channels
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Show how to apply the brand guideline across websites, marketing materials, emails, and advertisements.
+          </p>
+          
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Examples of Brand in Action
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Include mockups or real examples to visually demonstrate the brand's look and feel in various applications.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            7. Review and Update Periodically
+          </h2>
+          <h3
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-semibold leading-normal pt-5"
+          >
+            Regular Audits
+          </h3>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            To keep your brand current, plan routine reviews and updates, reflecting any evolutions in brand strategy, visual identity, or target market preferences.
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-bold leading-normal pt-10"
+          >
+            Conclusion
+          </h2>
+          <p
+            class="text-[#44433F] text-base sm:text-lg md:text-[24px] font-normal leading-normal mt-3"
+          >
+            Creating a brand guideline is essential for marketing consistency and a cohesive brand presence. With clear instructions on visual identity, voice, and content, a well-defined brand guideline supports a strong, recognizable brand at every touchpoint.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Navigation functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const leftButton = document.querySelector('.nav-button:first-child');
+        const rightButton = document.querySelector('.nav-button:last-child');
+        
+        leftButton.addEventListener('click', function() {
+          // Replace with actual previous page URL
+          window.location.href = './VideoMarketing.html'; 
+        });
+        
+        rightButton.addEventListener('click', function() {
+          // Replace with actual next page URL
+          window.location.href = './WebsiteUI.html'; 
+        });
+      });
+    </script>
+  </body>
+</html>
